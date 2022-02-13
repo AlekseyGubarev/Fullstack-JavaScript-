@@ -1,0 +1,486 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+.container{
+    max-width: 1140px;
+    margin:0 auto;
+}
+.wrapper{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.top{
+    flex-grow: 1;
+}
+.header{
+    background-color: #222;
+}
+.icon_basket{
+    position: relative;
+}
+.image_basket{
+    display: block;
+}
+.ellipse{
+    position: absolute;
+    top: -5px;
+    right: -10px;
+}
+.menu{
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.part_menu{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    margin-right: 41px;
+}
+.icon_header{
+    margin: 0 32px;
+}
+.main_background{
+    background-color:#F1E4E6;
+    margin-bottom: 65px;
+}
+.heading{
+    background-image: url(img/main_image.png);
+    background-repeat: no-repeat;
+    background-position:-130px;
+    height: 764px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-family:Lato;
+    font-style: normal;
+    color: #222222;
+    justify-content: right;
+    padding-right: 200px;
+}
+.rectangle{
+    height: 92px;
+    width: 12px;
+    background-color:  #F16D7F;;
+    margin-right: 16px;
+}
+.brand{
+font-weight: 900;
+font-size: 48px;
+line-height: 58px;
+}
+
+.luxerios{
+font-weight: 700;
+font-size: 32px;
+line-height: 38.4px;
+}
+.fashion{
+color:#F16D7F;
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.for_person_img{
+    width: 100%;
+    height: 100%;
+}
+.luxirous_img{
+    width: 100%;
+    height: 100%;
+}
+.text{
+    position: absolute;
+    text-transform: uppercase;
+    font-family: Lato;
+    font-style: normal;
+}
+.accesories{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 96px;
+}
+.upper_text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.lower_text{
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 28.8px;
+    text-align: center;
+    color:#F16D7F;
+}
+.heading_section{
+    text-align: center;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+}
+.heading_items{
+    font-size: 30px;
+    line-height: 36px;
+    color: #222222;
+}
+.subtitle{
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
+    margin-bottom: 48px;
+}
+.items{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.card_items{
+    width: 360px;
+    height: 580px;
+    display: flex;
+    flex-direction: column;
+    background-color:#F8F8F8;
+    margin-bottom: 30px;  
+}
+.caption_image_items{
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items:baseline;
+    flex-grow: 1;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+}
+.heading_card_items{
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000
+}
+.text_items{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5D5D5D;
+}
+.price{
+    font-size: 16px;
+    line-height: 19px;
+    color: #F16D7F;
+}
+.button{
+    text-align: center;
+    margin-top: 49px;
+    margin-bottom: 96px;
+}
+.browse_all{
+    font-size: 16px;
+    line-height: 19px;
+    color: #F26376;
+    padding: 14px 39px;
+    border: 1px solid #FF6A6A;   
+}
+footer{
+    background: #222224;
+}
+.top_footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 103px 30px;
+}
+.description_footer{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    color: #FBFBFB;
+    text-align: center;
+    width: 360px;
+}
+.heading_footer{
+    font-size: 19.96px;
+    line-height: 24px;
+    padding-top: 25px;
+    padding-bottom: 16px;  
+}
+.text_footer{
+    font-weight: 300;
+    font-size: 13.972px;
+    line-height: 17px;
+    text-align: center;
+}
+.background_middle_footer{
+    background-image: url(img/photo_subscribe.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.middle_footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.text_photo{
+    text-align: center;
+}
+.figure_image{
+    padding-top: 97px;
+    padding-bottom: 30px;
+}
+.text_figure{
+    width: 360px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #222224;
+    margin-bottom: 126px;
+    text-align: center;
+}
+.text_subscribe{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 167.2%; 
+    text-align: center;
+    color: #222224;
+}
+.letter{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    color: #222224;
+    margin-bottom: 32px;
+}
+.form_footer{
+    display: flex;
+    align-items: center;
+}
+.email{
+    display: block;
+    border-radius: 30px 0 0 30px;
+    width: 256px;
+    height: 49px;
+    padding-left: 22px;
+    vertical-align:middle;
+    box-sizing: border-box;
+    background: #E1E1E1;
+    border: none;
+}
+.footer_button{
+    display: block;
+    border-radius:0 30px 30px 0;
+    width: 100px;
+    height: 49px; 
+    background: #F16D7F;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    box-sizing: border-box;
+    border: none;
+}
+.copy{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FBFBFB;
+}
+.footer_bottom{
+    display: flex;
+    justify-content: space-between;
+}
+.icons_footer{
+    display: flex;
+    align-items: center;
+}
+.icon{
+    display: flex;
+    width: 32px;
+    height: 32px;
+    margin-right: 7px;
+    margin-left: 0;
+    background: #FFFFFF;
+    justify-content: center;
+    align-items: center;
+}
+/*Ниже стили для адаптива планшетной версии*/
+@media (max-width:1024px){
+    .heading{
+        background-image: url(img/main_image.png);
+        background-repeat: no-repeat;
+        background-position:left;
+        background-size: contain;
+        height: 368px;
+        margin-right: 16px;
+    }
+    .container{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .main_background {
+     margin-bottom: 20px;
+    }
+    .brand{
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 53px;
+        }  
+    .luxerios{
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        }
+    .for_person_img{
+        width: 100%;
+        height: 100%;
+    }
+    .luxirous_img{
+        width: 100%;
+        height: 100%;
+    }
+    .card_men{
+        margin-left: 19px;
+        margin-right: 19px;    
+    }
+    .accesories{
+        margin-bottom: 155px;
+    }
+    .subtitle{
+        margin-bottom: 74px;
+    }
+    .items{
+        justify-content: space-around;
+    }
+    .card_items{
+        margin-bottom: 17px;
+    }
+    .button{
+        margin-top: 33px;
+        margin-bottom: 65px;
+    }
+    .top_footer{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        padding-top: 48px;
+        padding-bottom: 64px;
+    }
+    .heading_footer{
+        padding-top: 25px;
+        padding-bottom: 16px;
+    }
+    .description_footer{
+        margin-bottom: 48px;
+    }
+    .description_footer:last-of-type{
+        margin-bottom:0; 
+    }
+    .middle_footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .figure_image {
+        padding-top: 64px;
+        padding-bottom: 30px;
+    }
+    .text_figure {
+        margin-bottom: 48px;
+    }
+    .letter{
+        margin-bottom: 27px;
+    }
+    .subscribe{
+        margin-bottom: 140px;
+    }
+    .background_middle_footer{
+        background-size:cover;
+        background-position: -500px;
+    }
+    .copy{
+        padding-left: 16px;
+    }
+    .icons_footer{
+        padding-right: 16px;
+    }
+}
+/*Ниже стили для телефона 375*667*/
+@media (max-width:667px){
+  .icon_header,.icon_basket{
+       display: none;
+  }  
+  .heading{
+       background-image: none;
+       height: 363px;
+    }
+    .main_background {
+        margin-bottom: 64px;
+       }
+    .cards{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0;
+    }
+    .card{
+        width: 100%;
+        margin-bottom: 32px;
+    }
+    .items{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    .background_middle_footer {
+        background-size: cover;
+        background-position: -400px;
+    }
+    .text_figure{
+    font-size: 18px;
+    line-height: 22px;
+    }
+    .button {
+        margin-top: 41px;
+        margin-bottom: 96px;
+    }
+    .subscribe{
+        margin-bottom: 110px;
+    }
+    .text_subscribe{
+        line-height: 153.2%;
+    }
+    .footer_bottom{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .icons_footer{
+        margin-top: 43px;
+    }
+    .copy{
+        padding-top: 40px;
+        padding-bottom: 9px;
+    }
+}
