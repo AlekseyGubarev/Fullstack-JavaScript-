@@ -919,5 +919,29 @@ details.open[open] > summary.filter{
    display: block;
 }
 .input_size_value{
-  padding-left: 9px;
+   padding-left: 9px;
+}
+.numbering{
+    text-align: center;
+    margin-top: 18.5px;
+    margin-bottom: 96.5px;
+    border: 1px solid #EBEBEB;
+    width: fit-content;
+    padding: 12px 15px;
+}
+.numbering a{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+    padding: 12px 7px;
+    color: #EBEBEB;
+}
+.numbering a:hover{
+    color:  #EF5B70;
+}
+.numbering__icon{
+   font-size: 16px;
+   line-height: 19px;
+   color: #000000;
 }
