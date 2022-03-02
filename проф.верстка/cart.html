@@ -22,7 +22,10 @@
                     <ul class="part_menu">
                         <li><a class="logo" href="index.html"> <img src="img/logo.svg" alt="logo">
                             </a></li>
-                            <li class="search"> <i class="fa-solid fa-magnifying-glass"></i><form  action="#"><input class="form_search" type="search" name="poisk" placeholder="Search"></form></li>
+                        <li class="search"> <i class="fa-solid fa-magnifying-glass"></i>
+                            <form action="#"><input class="form_search" type="search" name="poisk" placeholder="Search">
+                            </form>
+                        </li>
                     </ul>
                     <ul class="part_menu">
                         <li>
@@ -69,45 +72,107 @@
             <nav class="background_nav ">
                 <div class="navigation container">
                     <p class="page_navigation">
-                        REGISTRATION
+                        SHOPPING CART
                     </p>
                 </div>
             </nav>
-            <div class="container registration">
-                <form class="registration_form">
-                    <p class="input_data">Your Name
-                        <input class="data" type="text" name="fisrtname" placeholder="First Name">
-                        <input class="data" type="text" name="lastname" placeholder="Last Name">
-                    </p>
-                    <div class="gender">
-                        <label class="gender_label"><input type="radio" name="gender">Male</label>
-                        <label class="gender_label"><input type="radio" name="gender">Female</label>
+            <section class="container cart">
+                <div>
+                    <div class="cart__selected cart__selected__indent">
+                        <img class="cart__selected__image" src="img/cart_1.png" alt="photo">
+                        <div class="cart__selected__parameters">
+                            <div>
+                                <h3 class="cart__selected__parameters__heading">MANGO PEOPLE T-SHIRT</h3>
+                                <p class="cart__selected__parameters__text">Price:<span>$300</span></p>
+                                <div class="cart__selected__parameters__kind">
+                                    <p class="cart__selected__parameters__text">Color:</p>
+                                    <select name="color">
+                                        <option value="red">Red</option>
+                                        <option value="grenn">Green</option>
+                                        <option value="blue">Blue</option>
+                                    </select>
+                                </div>
+                                <div class="cart__selected__parameters__kind">
+                                    <p class="cart__selected__parameters__text">Size:</p>
+                                    <select name="size">
+                                        <option value="xl">XL</option>
+                                        <option value="m">M</option>
+                                        <option value="l">L</option>
+                                    </select>
+                                </div>
+                                <div class="cart__selected__parameters__kind">
+                                    <p class="cart__selected__parameters__text">Quantity:</p>
+                                    <select name="quantity">
+                                        <option value="1">1</option>
+                                        <option value="2" selected>2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-circle-xmark"></i>
+                            </div>
+                        </div>
                     </div>
-                    <p class="input_data">Login details</p>
-                    <input class="data" type="email" name="email" placeholder="Email">
-                    <input class="data" type="password" name="password" placeholder="Password">
-                    <p class="correction">Please use 8 or more characters, with at least 1 number and a mixture of
-                        uppercase and lowercase letters</p>
-                    <div>
-                        <button class="button_join">
-                            <span class="text_button_join">JOIN NOW</span>
-                            <i class="button_join_arrow fa-solid fa-arrow-right-long"></i>
+                    <div class="cart__selected">
+                        <img class="cart__selected__image" src="img/cart_2.png" alt="photo">
+                        <div class="cart__selected__parameters">
+                            <div>
+                                <h3 class="cart__selected__parameters__heading">MANGO PEOPLE T-SHIRT</h3>
+                                <p class="cart__selected__parameters__text">Price:<span>$300</span></p>
+                                <div class="cart__selected__parameters__kind">
+                                    <p class="cart__selected__parameters__text">Color:</p>
+                                    <select name="color">
+                                        <option value="red">Red</option>
+                                        <option value="grenn">Green</option>
+                                        <option value="blue">Blue</option>
+                                    </select>
+                                </div>
+                                <div class="cart__selected__parameters__kind">
+                                    <p class="cart__selected__parameters__text">Size:</p>
+                                    <select name="size">
+                                        <option value="xl">XL</option>
+                                        <option value="m">M</option>
+                                        <option value="l">L</option>
+                                    </select>
+                                </div>
+                                <div class="cart__selected__parameters__kind">
+                                    <p class="cart__selected__parameters__text">Quantity:</p>
+                                    <select name="quantity">
+                                        <option value="1">1</option>
+                                        <option value="2" selected>2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-circle-xmark"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shoppping_cart_button">
+                        <input type="submit" value="CLEAR SHOPPING CART" />
+                        <input type="submit" value="CONTINUE SHOPPING" />
+                    </div>
+                </div>
+                <form class="cart_form">
+                    <p class="input_data">SHIPPING ADRESS
+                        <input class="data" type="text" name="country" placeholder="Bangladesh">
+                        <input class="data" type="text" name="state" placeholder="State">
+                        <input class="data" type="text" name="postcode" placeholder="Postcode / Zip">
+                    </p>
+                    <input class="cart_form__input_comment" type="submit" value="GET A QUOTE" />
+                    <div class="cart_form__checkout">
+                        <p class="cart_form__checkout__sub">SUB TOTAL $900</p>
+                        <p class="cart_form__checkout__grand">GRAND TOTAL <span
+                                class="cart_form__checkout__grand__total">$900</span></p>
+                        <hr>
+                        <button class="cart_form__button">
+                            <span class="cart_form__button__text">PROCEED TO CHECKOUT</span>
                         </button>
                     </div>
                 </form>
-                <aside class="loyalty">
-                    <h3 class="loyalty__heading">LOYALTY HAS ITS PERKS</h3>
-                    <p class="loyalty__heading__list">Get in on the loyalty program where you can earn points and unlock
-                        serious perks. Starting with these as soon as you join:</p>
-                    <ul>
-                        <li>15% off welcome offer</li>
-                        <li>Free shipping, returns and exchanges on all orders</li>
-                        <li>$10 off a purchase on your birthday</li>
-                        <li>Early access to products</li>
-                        <li>Exclusive offers & rewards</li>
-                    </ul>
-                </aside>
-            </div>
+            </section>
         </div>
         <footer>
             <div class="background_middle_footer">
