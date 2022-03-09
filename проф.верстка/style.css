@@ -24,11 +24,6 @@
     background-color: #222;
 }
 
-.big_container {
-    max-width: 1600px;
-    margin: 0 auto;
-}
-
 ul {
     list-style-type: none;
 }
@@ -49,6 +44,7 @@ ul {
     width: 360px;
     height: 45px;
     border-radius: 0 30px 30px 0;
+    padding-left: 17px;
 }
 
 .search:hover .fa-magnifying-glass {
@@ -74,7 +70,7 @@ ul {
 .ellipse {
     position: absolute;
     top: -5px;
-    right: -10px;
+    right: 0;
 }
 
 .menu {
@@ -89,8 +85,6 @@ ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-left: 232px;
-    margin-right: 232px;
 }
 
 .logo {
@@ -109,8 +103,7 @@ ul {
     min-height: 764px;
     background: #FFFFFF;
     text-align: left;
-    padding-left: 34px;
-    padding-right: 34px;
+    
     box-sizing: border-box;
     z-index: 2;
     box-shadow: 0 20px 20px #ebe5e5;
@@ -128,7 +121,6 @@ summary {
     list-style-type: none;
     cursor: pointer;
 }
-
 i {
     color: #E8E8E8;
 }
@@ -147,6 +139,7 @@ i {
 
 .fa-cart-shopping {
     font-size: 32px;
+    padding-right: 10px;
 }
 
 .fa-brands {
@@ -164,6 +157,8 @@ i {
     padding-top: 37px;
     padding-bottom: 12px;
     margin-bottom: 12px;
+    padding-left: 34px;
+    padding-right: 34px;
 }
 
 .list_menu_person {
@@ -178,48 +173,61 @@ i {
 .page_menu {
     padding-top: 5.5px;
     padding-bottom: 5.5px;
-    padding-left: 20px;
-    padding-right: 20px;
 }
-
+.page:hover{
+    color: #F26376;
+}
 .page {
     text-decoration: none;
     color: #6F6E6E;
-
+    padding-left: 54px;
+    padding-right:54px;
 }
-
 .page_person {
     display: block;
     color: #F16D7F;
     padding-top: 6.5px;
     padding-bottom: 6.5px;
     text-transform: uppercase;
+    text-decoration: none;
+    padding-left: 34px;
+    padding-right: 34px;
 }
 
-.main_background {
+.baner_background {
     background-color: #F1E4E6;
+    margin-bottom: 20px;
+}
+
+.baner {
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 65px;
 }
 
+.baner__image {
+    margin-left: -230px;
+    width: 50%;
+}
+
+.main_image {
+    height: 100%;
+}
+
 .heading {
-    background-image: url(img/main_image.png);
-    background-repeat: no-repeat;
-    background-position: -130px;
     height: 764px;
     display: flex;
     align-items: center;
     text-transform: uppercase;
     font-style: normal;
     color: #222222;
-    justify-content: right;
-    padding-right: 200px;
+    width: 50%;
 }
 
 .rectangle {
     height: 92px;
     width: 12px;
     background-color: #F16D7F;
-    ;
     margin-right: 16px;
 }
 
@@ -254,6 +262,12 @@ i {
 
 .discount {
     display: block;
+    width: 32%;
+}
+
+.discount_accesories {
+    display: block;
+    width: 100%;
 }
 
 /* анимация */
@@ -336,8 +350,8 @@ i {
 }
 
 .for_person_img {
-    width: 100%;
     height: 100%;
+    width: 100%;
 }
 
 .luxirous_img {
@@ -404,8 +418,8 @@ i {
 }
 
 .card_items {
-    width: 360px;
-    margin-bottom: 30px;
+    width: 32%;
+    margin-bottom: 3%;
     transition: 1s;
 }
 
@@ -415,6 +429,7 @@ i {
 
 .picture {
     transition: 1s;
+    width: 100%;
 }
 
 .card_items:hover .picture {
@@ -560,6 +575,7 @@ footer {
     font-size: 13.972px;
     line-height: 17px;
     text-align: center;
+    margin: 0 2%;
 }
 
 .background_middle_footer {
@@ -671,19 +687,35 @@ footer {
 }
 
 /*Ниже стили для адаптива планшетной версии*/
-@media (max-width:1024px) {
+@media (max-width:768px) {
+    .baner__image {
+        margin-left: 0;
+        width: 50%;
+        height: 368px;
+    }
+
     .heading {
-        background-image: url(img/main_image.png);
-        background-repeat: no-repeat;
-        background-position: left;
-        background-size: contain;
         height: 368px;
         margin-right: 16px;
+        width: 50%;
+    }
+
+    .brand {
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 53px;
+
+    }
+
+    .luxerios {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28.8px;
     }
 
     .container {
-        padding-left: 16px;
-        padding-right: 16px;
+        padding-left: 2%;
+        padding-right: 2%;
     }
 
     .part_menu {
@@ -691,35 +723,22 @@ footer {
         margin-right: 32px;
     }
 
-    .main_background {
+    .baner {
         margin-bottom: 20px;
     }
 
-    .brand {
-        font-weight: 900;
-        font-size: 44px;
-        line-height: 53px;
-    }
-
-    .luxerios {
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 28px;
+    .discount {
+        width: 32%;
     }
 
     .for_person_img {
+        min-height: 100%;
         width: 100%;
-        height: 100%;
     }
 
     .luxirous_img {
         width: 100%;
-        height: 100%;
-    }
-
-    .card_men {
-        margin-left: 19px;
-        margin-right: 19px;
+        min-height: 116px;
     }
 
     .accesories {
@@ -732,9 +751,11 @@ footer {
 
     .items {
         justify-content: space-around;
+        flex-wrap: wrap;
     }
 
     .card_items {
+        width: 48%;
         margin-bottom: 17px;
     }
 
@@ -809,14 +830,40 @@ footer {
         display: none;
     }
 
-    .heading {
-        background-image: none;
-        height: 363px;
+    .baner__image {
+        display: none;
     }
 
-    .main_background {
+    .heading {
+        height: 363px;
+        justify-content: center;
+        flex-grow: 1;
+    }
+
+    .rectangle {
+        height: 61px;
+        width: 12px;
+        background-color: #F16D7F;
+        margin-right: 16px;
+    }
+
+    .brand {
+        font-weight: 900;
+        font-size: 38px;
+        line-height: 46px;
+    }
+
+    .luxerios {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+
+    .baner_background {
         margin-bottom: 64px;
     }
+
 
     .cards {
         flex-direction: column;
@@ -824,7 +871,7 @@ footer {
         margin-bottom: 0;
     }
 
-    .card {
+    .discount {
         width: 100%;
         margin-bottom: 32px;
     }
@@ -834,6 +881,10 @@ footer {
         flex-direction: column;
         align-items: center;
         flex-wrap: nowrap;
+    }
+
+    .card_items {
+        width: 100%;
     }
 
     .background_middle_footer {
@@ -936,12 +987,10 @@ footer {
     z-index: 2;
 
 }
-
 .slider_product {
     display: block;
 
 }
-
 .button_slider {
     display: block;
     width: 47px;
@@ -955,12 +1004,12 @@ footer {
     color: #000000;
     font-size: 47px;
 }
-
-.fa-angle-left:hover,
-.fa-angle-right:hover {
-    color: #F16D7F;
+.button_slider:hover .fa-angle-left{
+    color: white;
 }
-
+.button_slider:hover .fa-angle-right{
+    color: white;
+}
 .tender {
     position: relative;
     z-index: 1;
@@ -1030,7 +1079,6 @@ hr {
     display: flex;
     margin-bottom: 49px;
 }
-
 .choice::after {
     content: "\f107";
     font-family: FontAwesome;
@@ -1052,7 +1100,11 @@ hr {
     text-transform: uppercase;
     margin: 3px 12px;
 }
-
+.button_choice:hover{
+    box-shadow: none;
+    transform: none;
+    margin: 3px 12px;
+}
 .add_basket_product {
     display: block;
     border: 1px solid #FFFFFF;
@@ -1310,6 +1362,7 @@ details.open[open]>summary.filter {
     height: 45px;
     border: 1px solid #A4A4A4;
     margin-top: 20.5px;
+    padding-left: 17px;
 }
 
 input::placeholder {
@@ -1317,7 +1370,6 @@ input::placeholder {
     font-size: 13px;
     line-height: 16px;
     color: #B1B1B1;
-    padding-left: 17px;
 }
 
 .gender {
@@ -1520,25 +1572,28 @@ label input {
     background: #FFFFFF;
     border: 1px solid #A4A4A4;
     cursor: pointer;
-    transition: 2s;
+    transition: 0.3s;
 }
 
 .shoppping_cart_button input:hover {
-    background: #F5F3F3;
+    background: #F16D7F;
+    color: #FFFFFF;
 }
 
 .cart_form__input_comment {
     margin-top: 24px;
     margin-bottom: 57.4px;
     padding: 10px 12px;
+    border: 1px solid #A4A4A4;
     width: fit-content;
     background: #FFFFFF;
-    transition: 2s;
+    transition: 0.3s;
     cursor: pointer;
 }
 
 .cart_form__input_comment:hover {
-    background: #F5F3F3;
+    background: #F16D7F;
+    color: #FFFFFF;
 }
 
 .cart_form__checkout {
