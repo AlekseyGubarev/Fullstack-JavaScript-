@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/be6c4addf8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="top">
+            <div class="header">
+                <div class="container menu">
+                    <ul class="part_menu">
+                        <li><a class="logo" href="index.html"> <img src="img/logo.svg" alt="logo">
+                            </a></li>
+                        <li class="search"> <i class="fa-solid fa-magnifying-glass"></i>
+                            <form action="#"><input class="form_search" type="search" name="poisk" placeholder="Search">
+                            </form>
+                        </li>
+                    </ul>
+                    <ul class="part_menu">
+                        <li>
+                            <details>
+                                <summary><i class="fa-solid fa-bars"></i></summary>
+                                <div class="list_menu text_menu">
+                                    <i class="fa-solid fa-xmark"></i>
+                                    <h3 class="heading_window_menu">Menu</h3>
+                                    <ul class="list_menu_person">
+                                        <li><a class="page page_person" href="#">Man</a></li>
+                                        <li class="page_menu"><a class="page" href="#">Accessories</a></li>
+                                        <li class="page_menu"><a class="page" href="#">Bags</a></li>
+                                        <li class="page_menu"><a class="page" href="#">Denim</a></li>
+                                        <li class="page_menu"><a class="page" href="#">T-Shirts</a></li>
+                                    </ul>
+                                    <ul class="list_menu_person">
+                                        <li><a class="page page_person" href="#">WOMAN</a></li>
+                                        <li class="page_menu"><a class="page" href="#">Accessories</a></li>
+                                        <li class="page_menu"><a class="page" href="#">Jackets & Coats</a></li>
+                                        <li class="page_menu"><a class="page" href="#">Polos</a></li>
+                                        <li class="page_menu"><a class="page" href="#">T-Shirts</a></li>
+                                        <li class="page_menu"><a class="page" href="#">Shirts</a></li>
+                                    </ul>
+                                    <ul class="list_menu_person">
+                                        <li><a class="page page_person" href="#">KIDS</a>
+                                        <li>
+                                        <li class="page_menu"><a class="page" href="#">Accessories</a></li>
+                                        <li class="page_menu"><a class="page" href="#">Jackets & Coats</a></li>
+                                        <li class="page_menu"><a class="page" href="#">Polos</a></li>
+                                        <li class="page_menu"><a class="page" href="#">T-Shirts</a></li>
+                                        <li class="page_menu"><a class="page" href="#">Shirts</a></li>
+                                        <li class="page_menu"><a class="page" href="#">Bags</a></li>
+                                    </ul>
+                                </div>
+                            </details>
+                        </li>
+                        <li class="icon_header"><a href="registration.html"> <i class="fa-solid fa-user"></i></a></li>
+                        <li class="icon_basket"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                            <div class="ellipse"><img src="img/ellipse.png" alt=""></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <nav class="background_nav ">
+                <div class="navigation container">
+                    <p class="page_navigation">
+                        SHOPPING CART
+                    </p>
+                </div>
+            </nav>
+            <section class="container cart">
+                <div>
+                    <div class="cart__selected cart__selected__indent">
+                        <img class="cart__selected__image" src="img/cart_1.png" alt="photo">
+                        <div class="cart__selected__parameters">
+                            <div>
+                                <h3 class="cart__selected__parameters__heading">MANGO PEOPLE T-SHIRT</h3>
+                                <p class="cart__selected__parameters__text">Price:<span>$300</span></p>
+                                <div class="cart__selected__parameters__kind">
+                                    <p class="cart__selected__parameters__text">Color:</p>
+                                    <select name="color">
+                                        <option value="red">Red</option>
+                                        <option value="grenn">Green</option>
+                                        <option value="blue">Blue</option>
+                                    </select>
+                                </div>
+                                <div class="cart__selected__parameters__kind">
+                                    <p class="cart__selected__parameters__text">Size:</p>
+                                    <select name="size">
+                                        <option value="xl">XL</option>
+                                        <option value="m">M</option>
+                                        <option value="l">L</option>
+                                    </select>
+                                </div>
+                                <div class="cart__selected__parameters__kind">
+                                    <p class="cart__selected__parameters__text">Quantity:</p>
+                                    <select name="quantity">
+                                        <option value="1">1</option>
+                                        <option value="2" selected>2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-circle-xmark"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart__selected">
+                        <img class="cart__selected__image" src="img/cart_2.png" alt="photo">
+                        <div class="cart__selected__parameters">
+                            <div>
+                                <h3 class="cart__selected__parameters__heading">MANGO PEOPLE T-SHIRT</h3>
+                                <p class="cart__selected__parameters__text">Price:<span>$300</span></p>
+                                <div class="cart__selected__parameters__kind">
+                                    <p class="cart__selected__parameters__text">Color:</p>
+                                    <select name="color">
+                                        <option value="red">Red</option>
+                                        <option value="grenn">Green</option>
+                                        <option value="blue">Blue</option>
+                                    </select>
+                                </div>
+                                <div class="cart__selected__parameters__kind">
+                                    <p class="cart__selected__parameters__text">Size:</p>
+                                    <select name="size">
+                                        <option value="xl">XL</option>
+                                        <option value="m">M</option>
+                                        <option value="l">L</option>
+                                    </select>
+                                </div>
+                                <div class="cart__selected__parameters__kind">
+                                    <p class="cart__selected__parameters__text">Quantity:</p>
+                                    <select name="quantity">
+                                        <option value="1">1</option>
+                                        <option value="2" selected>2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-circle-xmark"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shoppping_cart_button">
+                        <input type="submit" value="CLEAR SHOPPING CART" />
+                        <input type="submit" value="CONTINUE SHOPPING" />
+                    </div>
+                </div>
+                <form class="cart_form">
+                    <p class="input_data">SHIPPING ADRESS
+                        <input class="data" type="text" name="country" placeholder="Bangladesh">
+                        <input class="data" type="text" name="state" placeholder="State">
+                        <input class="data" type="text" name="postcode" placeholder="Postcode / Zip">
+                    </p>
+                    <input class="cart_form__input_comment" type="submit" value="GET A QUOTE" />
+                    <div class="cart_form__checkout">
+                        <p class="cart_form__checkout__sub">SUB TOTAL $900</p>
+                        <p class="cart_form__checkout__grand">GRAND TOTAL <span
+                                class="cart_form__checkout__grand__total">$900</span></p>
+                        <hr>
+                        <button class="cart_form__button">
+                            <span class="cart_form__button__text">PROCEED TO CHECKOUT</span>
+                        </button>
+                    </div>
+                </form>
+            </section>
+        </div>
+        <footer>
+            <div class="background_middle_footer">
+                <div class="middle_footer container">
+                    <figure class="text_photo">
+                        <img class="figure_image" src="img/footer_foto.png" alt="">
+                        <p class="text_figure">
+                            “Vestibulum quis porttitor dui!
+                            Quisque viverra nunc mi, a pulvinar purus condimentum“
+                        </p>
+                    </figure>
+                    <div class="subscribe">
+                        <p class="text_subscribe">
+                            SUBSCRIBE
+                        </p>
+                        <p class="letter">
+                            FOR OUR NEWLETTER AND PROMOTION
+                        </p>
+                        <form action="#" class="form_footer">
+                            <input type="email" class="email" name="email" placeholder="Enter Your Email">
+                            <input type="submit" class="footer_button" value="Subscribe">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="container footer_bottom">
+                <p class="copy">&copy; 2021 Brand All Rights Reserved.</p>
+                <div class="icons_footer">
+                    <div class="icon"><a href="#"><i class="fa-brands fa-facebook-square"></i></a></div>
+                    <div class="icon"><a href="#"><i class="fa-brands fa-instagram-square"></i></a></div>
+                    <div class="icon"><a href="#"><i class="fa-brands fa-pinterest-square"></i></a></div>
+                    <div class="icon"><a href="#"><i class="fa-brands fa-twitter-square"></i></a></div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
