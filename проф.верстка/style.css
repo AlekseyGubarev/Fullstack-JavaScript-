@@ -41,7 +41,7 @@ ul {
 }
 
 .search:hover .form_search {
-    width: 360px;
+    width: 130%;
     height: 45px;
     border-radius: 0 30px 30px 0;
     padding-left: 17px;
@@ -263,13 +263,16 @@ i {
 .discount {
     display: block;
     width: 32%;
+    transition: 0.3s;
 }
-
+.discount:hover, .discount_accesories:hover{
+    filter: brightness(1.5);
+}
 .discount_accesories {
     display: block;
     width: 100%;
+    transition: 0.3s;
 }
-
 /* анимация */
 @-webkit-keyframes heartbeat {
     from {
@@ -1363,6 +1366,7 @@ details.open[open]>summary.filter {
     border: 1px solid #A4A4A4;
     margin-top: 20.5px;
     padding-left: 17px;
+    box-sizing: border-box;
 }
 
 input::placeholder {
@@ -1491,7 +1495,9 @@ label input {
     display: flex;
     box-shadow: 20px 15px 15px 0 #E5E5E5;
 }
-
+.cart__selected__link{
+    display: block;
+}
 .cart__selected__image {
     display: block;
     width: 262px;
